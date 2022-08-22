@@ -20,4 +20,4 @@ jobs:
       - name: "Python Poetry Action"
         uses: Gr1N/setup-poetry@v7
       - name: "Run tests and linters"
-        run: pytest
+        run: make test

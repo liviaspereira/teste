@@ -1,7 +1,7 @@
-import re
 from unittest import mock
 
 from codigo import hello_world
+
 
 def test_hello_world():
     request_mock = mock.MagicMock()
@@ -9,6 +9,7 @@ def test_hello_world():
     expected_result = ("ok", 200)
     result = hello_world(request_mock)
     assert result == expected_result
+
 
 def test_not_batata_hello_world():
     request_mock = mock.MagicMock()
